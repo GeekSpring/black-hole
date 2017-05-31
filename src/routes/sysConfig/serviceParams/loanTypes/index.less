@@ -1,0 +1,41 @@
+.apply {
+  color: black;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+
+  :global .anticon {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: cursive;
+  }
+}
+
+/* use css to set position of modal */
+.vertical-center-modal {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-center-modal:before {
+  content: '';
+  display: inline-block;
+  height: 500px;
+  vertical-align: middle;
+}
+
+.vertical-center-modal .ant-modal {
+  max-height: 500vh;
+  overflow-y: auto;
+  display: inline-block;
+  vertical-align: middle;
+  top: 0;
+  text-align: left;
+}
